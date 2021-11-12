@@ -1,32 +1,26 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <v-container fluid class="bg-dark p-10">
+      <v-container id="p-10">
+        <h1 class="text-center text-white">Laravel Vue Crud</h1>
+      </v-container>
+    </v-container>
+    <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-dark{
+  background-color: #2f2f2f;
+  color: white;
+}
+.text-white{
+  color: white;
+}
+.text-center{
   text-align: center;
-  color: #2c3e50;
 }
-
-#nav {
+#p-10{
   padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
